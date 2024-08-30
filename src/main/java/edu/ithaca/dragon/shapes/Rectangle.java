@@ -11,7 +11,7 @@ public class Rectangle {
     }
 
     public double calcArea(){
-       throw new RuntimeException("Not implemented yet");
+       return this.length * this.width;
     }
 
     public void doubleSize(){
