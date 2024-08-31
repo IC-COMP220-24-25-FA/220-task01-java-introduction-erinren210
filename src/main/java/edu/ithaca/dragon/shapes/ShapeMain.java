@@ -2,6 +2,7 @@ package edu.ithaca.dragon.shapes;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class ShapeMain {
     
@@ -11,6 +12,8 @@ public class ShapeMain {
         //Use a loop to repeat the process 5 times
         List<Rectangle> myList = ShapeMain.randomRectangleList();
         printRectangleInfo(myList);
+        int idk = userIndex(args);
+        System.out.println(idk);
 
 
     }
@@ -62,5 +65,13 @@ public class ShapeMain {
     public static void doubleSizeOfOne(List<Rectangle> listname, int idx){
         Rectangle currentRect = listname.get(idx);
         currentRect.doubleSize();
+    }
+
+    public static int userIndex(String[] args){
+        try (Scanner myObj = new Scanner(System.in)) {
+            System.out.println("Enter Value 0-4");
+            int idx = myObj.nextInt();
+            return idx;
+        }
     }
 }
