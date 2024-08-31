@@ -12,4 +12,9 @@ public class Triangle{
     public double calcArea(){
         return (base * height)/2;
     }
+
+    public void doubleSize(){
+        base = base * 2;
+        height = height * 2;
+    }
 }
