@@ -10,6 +10,7 @@ public class ShapeMain {
         //Allow the user to choose one, double the size of that one, and print them all again
         //Use a loop to repeat the process 5 times
         List<Rectangle> myList = ShapeMain.randomRectangleList();
+        printRectangleInfo(myList);
 
 
     }
@@ -34,5 +35,27 @@ public class ShapeMain {
         randomRectList.add(randRectangle);
 
         return randomRectList;
+    }
+
+    public static void printRectangleInfo(List<Rectangle> listname){
+        Rectangle rectA = listname.get(0);
+        System.out.println(rectA.calcArea());
+        System.out.println(rectA.longestLineWithin());
+
+        Rectangle rectB = listname.get(1);
+        System.out.println(rectB.calcArea());
+        System.out.println(rectB.longestLineWithin());
+
+        Rectangle rectC = listname.get(2);
+        System.out.println(rectC.calcArea());
+        System.out.println(rectC.longestLineWithin());
+
+        Rectangle rectD = listname.get(3);
+        System.out.println(rectD.calcArea());
+        System.out.println(rectD.longestLineWithin());
+
+        Rectangle rectE = listname.get(4);
+        System.out.println(rectE.calcArea());
+        System.out.println(rectE.longestLineWithin());
     }
 }
