@@ -58,4 +58,9 @@ public class ShapeMain {
         System.out.println(rectE.calcArea());
         System.out.println(rectE.longestLineWithin());
     }
+
+    public static void doubleSizeOfOne(List<Rectangle> listname, int idx){
+        Rectangle currentRect = listname.get(idx);
+        currentRect.doubleSize();
+    }
 }
