@@ -12,8 +12,13 @@ public class ShapeMain {
         //Use a loop to repeat the process 5 times
         List<Rectangle> myList = ShapeMain.randomRectangleList();
         printRectangleInfo(myList);
-        int idk = userIndex(args);
-        System.out.println(idk);
+        int loopInt = 0;
+        while(loopInt < 5){
+            int idx = userIndex(args);
+            doubleSizeOfOne(myList, idx);
+            printRectangleInfo(myList);
+            idx++;
+        }
 
 
     }
