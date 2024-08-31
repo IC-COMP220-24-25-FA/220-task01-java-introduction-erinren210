@@ -8,4 +8,8 @@ public class Triangle{
         base = baseIn;
         height = heightIn;
     }
+
+    public double calcArea(){
+        return (base * height)/2;
+    }
 }
