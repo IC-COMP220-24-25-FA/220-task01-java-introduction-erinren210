@@ -17,4 +17,8 @@ public class Triangle{
         base = base * 2;
         height = height * 2;
     }
+
+    public double longestLineWithin(){
+        return Math.sqrt(Math.pow(base, 2)+Math.pow(height, 2));
+    }
 }
