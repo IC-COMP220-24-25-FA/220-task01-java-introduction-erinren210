@@ -1,11 +1,11 @@
 package edu.ithaca.dragon.shapes;
 
 public class Triangle{
-    private double length;
-    private double width;
+    private double base;
+    private double height;
 
-    public Triangle(double lengthIn, double widthIn){
-        length = lengthIn;
-        width = widthIn;
+    public Triangle(double baseIn, double heightIn){
+        base = baseIn;
+        height = heightIn;
     }
 }
