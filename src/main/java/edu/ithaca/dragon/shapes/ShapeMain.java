@@ -17,7 +17,7 @@ public class ShapeMain {
             int idx = userIndex(args);
             doubleSizeOfOne(myList, idx);
             printRectangleInfo(myList);
-            idx++;
+            loopInt++;
         }
 
 
@@ -73,10 +73,15 @@ public class ShapeMain {
     }
 
     public static int userIndex(String[] args){
-        try (Scanner myObj = new Scanner(System.in)) {
+        try {
+            Scanner myObj = new Scanner(System.in);
             System.out.println("Enter Value 0-4");
             int idx = myObj.nextInt();
             return idx;
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            return -1;
         }
     }
 }
