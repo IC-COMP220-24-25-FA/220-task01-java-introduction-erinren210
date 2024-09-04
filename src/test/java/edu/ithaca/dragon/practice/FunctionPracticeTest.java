@@ -6,6 +6,9 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.jupiter.api.Test;
 
 public class FunctionPracticeTest {
@@ -38,4 +41,29 @@ public class FunctionPracticeTest {
         assertFalse(FunctionPractice.isGoodDog(5, 0, false));
     }
     
+    @Test
+    public void findFirstLargestTest(){
+        List<Integer> myList = new ArrayList<Integer>();
+        myList.add(4);
+        myList.add(6);
+        myList.add(10);
+        myList.add(7);
+        assertEquals(1, findFirstLargestTest(myList));
+        
+        List<Integer> myListB = new ArrayList<Integer>();
+        myListB.add(10);
+        myListB.add(1);
+        myListB.add(10);
+        myListB.add(1);
+        myListB.add(1);
+        assertEquals(2, myListB);
+
+        List<Integer> myListC = new ArrayList<Integer>();
+        assertEquals(-1, myListC);
+    }
+
+    private Object findFirstLargestTest(List<Integer> myList) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'findFirstLargestTest'");
+    }
 }
