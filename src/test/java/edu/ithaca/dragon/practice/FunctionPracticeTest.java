@@ -61,9 +61,4 @@ public class FunctionPracticeTest {
         List<Integer> myListC = new ArrayList<Integer>();
         assertEquals(-1, myListC);
     }
-
-    private Object findFirstLargestTest(List<Integer> myList) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'findFirstLargestTest'");
-    }
 }
