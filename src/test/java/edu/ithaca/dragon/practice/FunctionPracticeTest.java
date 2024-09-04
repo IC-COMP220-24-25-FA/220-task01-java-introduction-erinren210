@@ -48,7 +48,7 @@ public class FunctionPracticeTest {
         myList.add(6);
         myList.add(10);
         myList.add(7);
-        assertEquals(1, findFirstLargestTest(myList));
+        assertEquals(1, FunctionPractice.findFirstLargest(myList));
         
         List<Integer> myListB = new ArrayList<Integer>();
         myListB.add(10);
@@ -56,9 +56,9 @@ public class FunctionPracticeTest {
         myListB.add(10);
         myListB.add(1);
         myListB.add(1);
-        assertEquals(2, myListB);
+        assertEquals(2, FunctionPractice.findFirstLargest(myListB));
 
         List<Integer> myListC = new ArrayList<Integer>();
-        assertEquals(-1, myListC);
+        assertEquals(-1, FunctionPractice.findFirstLargest(myListC));
     }
 }
