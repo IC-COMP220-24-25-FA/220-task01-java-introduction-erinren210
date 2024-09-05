@@ -79,7 +79,27 @@ public class FunctionPractice {
      * If the largest number occurs more than once, return the index of the last occurence.
      */
     public static int findLastLargest(List<Integer> numbers){
-        throw new RuntimeException("Not Implemented");
+        if(numbers.size() == 0){
+            return -1;
+        }
+        else{
+            int idx = 0;
+            int largestNum = -99999999;
+            int largestNumIdx = 0;
+            while(idx < numbers.size()){
+                if(numbers.get(idx) > largestNum){
+                    largestNum = numbers.get(idx);
+                    largestNumIdx = idx;
+                }
+                if(numbers.get(idx) == largestNum){
+                    largestNumIdx = idx;
+                }
+                idx ++;
+            }
+            return largestNumIdx;
+        }
+            
+        
     }
 
     /**
