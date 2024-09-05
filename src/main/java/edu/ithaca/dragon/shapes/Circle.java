@@ -31,4 +31,9 @@ public class Circle {
     public double longestLineWithin(){
         return this.radius * 2;
     }
+
+    public String toString(){
+        String myCircle = new String("Circle ");
+        return myCircle + radius;
+    }
 }
