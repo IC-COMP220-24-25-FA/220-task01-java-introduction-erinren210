@@ -1,6 +1,6 @@
 package edu.ithaca.dragon.shapes;
 
-public class Triangle{
+class Triangle implements Shape {
     private double base;
     private double height;
 
