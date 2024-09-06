@@ -1,7 +1,8 @@
 package edu.ithaca.dragon.shapes;
 
 interface Shape {
-    public void calcArea();
+    public double calcArea();
     public void doubleSize();
-    public void longestLineWithin();
+    public double longestLineWithin();
+    public String toString();
 }
