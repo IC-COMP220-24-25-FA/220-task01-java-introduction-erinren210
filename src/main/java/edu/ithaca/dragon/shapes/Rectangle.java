@@ -24,8 +24,8 @@ public class Rectangle implements Shape {
     }
 
     public String toString(){
-        String myRectangle = new String("Rectangle ");
-        return myRectangle + length + width;
+        String myRectangle = new String("Rectangle length: ");
+        return myRectangle + length + " width: " + width;
     }
     
 }

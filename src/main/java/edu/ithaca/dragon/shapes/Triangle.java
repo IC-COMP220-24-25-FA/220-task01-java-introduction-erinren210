@@ -23,7 +23,7 @@ class Triangle implements Shape {
     }
 
     public String toString(){
-        String myTriangle = new String("triangle ");
-        return myTriangle + base + height;
+        String myTriangle = new String("triangle base: ");
+        return myTriangle + base + " height: " + height;
     }
 }
