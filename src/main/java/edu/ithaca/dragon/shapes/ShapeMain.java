@@ -13,6 +13,8 @@ public class ShapeMain {
         //Use a loop to repeat the process 5 times
         List<Shape> aList = ShapeMain.randomShapeList();
         ShapeMain.randomShapeListPrinter(aList);
+        ShapeMain.doubleList(aList);
+        ShapeMain.randomShapeListPrinter(aList);
         //List<Rectangle> myList = ShapeMain.randomRectangleList();
         //printRectangleInfo(myList);
         //int loopInt = 0;
@@ -133,5 +135,13 @@ public class ShapeMain {
             idx ++;
         }
         System.out.println(printList);
+    }
+
+    public static void doubleList(List<Shape> myList){
+        int idx = 0;
+        while(idx < 11){
+            myList.get(idx).doubleSize();
+            idx++;
+        }
     }
 }
